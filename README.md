@@ -7,6 +7,7 @@ Chatbot QMIPA (Codenamed = Q-Bot) adalah sebuah chatbot yang menggunakan basis C
 2. Menjadi teman berbicara untuk menemani asisten.
 3. Mencari term-term asing di internet
 4. Mencari pekerjaan yang sesuai dengan yang diinginkan.
+5. Membuat agar bisa voting
 
 ## To do list:
 1. Cari tahu lebih lanjut tentang sistem database SQL nya Chatterbot
