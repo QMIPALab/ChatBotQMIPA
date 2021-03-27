@@ -13,5 +13,5 @@ Chatbot QMIPA (Codenamed = Q-Bot) adalah sebuah chatbot yang menggunakan basis C
 2. Menambah database tentang asisten2 QMIPA
 
 ## Version History
-1.0.0 = Membuat dasar dari chatbot bernama Me-Q. Menggunakan model ChatbotAI
-1.0.1 = Mengganti model dari ChatbotAI menjadi Chatterbot. Menambah database baru.
+- 0.0.1 = Membuat dasar dari chatbot bernama Me-Q. Menggunakan model ChatbotAI
+- 0.0.2 = Mengganti model dari ChatbotAI menjadi Chatterbot. Menambah database baru.
