@@ -121,7 +121,8 @@ async def on_message(message):
 
             # Here we only reply if replying is set to true
             if replying:
-                await message.channel.send(response)
+                embed=discord.Embed(title="ChatBot AI", description = response, color = (0xF48D1))
+                await message.channel.send(embed=embed)
 
     except Exception as err:
         print(err.args)
