@@ -37,7 +37,6 @@ bot = ChatBot(
     ],
     input_adapter='chatterbot.input.VariableInputTypeAdapter',
     output_adapter="chatterbot.output.OutputAdapter",
-    output_format="text"
 )
 trainer = ChatterBotCorpusTrainer(bot)
 
