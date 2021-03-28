@@ -35,8 +35,6 @@ bot = ChatBot(
     filters=[
         'chatterbot.filters.RepetitiveResponseFilter'
     ],
-    input_adapter='chatterbot.input.VariableInputTypeAdapter',
-    output_adapter="chatterbot.output.OutputAdapter",
 )
 trainer = ChatterBotCorpusTrainer(bot)
 
