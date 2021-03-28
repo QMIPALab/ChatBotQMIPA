@@ -41,7 +41,7 @@ bot = ChatBot(
 )
 trainer = ChatterBotCorpusTrainer(bot)
 
-trainer.train("chatterbot.corpus.Gabungan")
+trainer.train("./Gabungan")
 
 def get_response(content):
         return bot.get_response(content)
