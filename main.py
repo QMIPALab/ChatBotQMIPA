@@ -18,15 +18,13 @@ bot = ChatBot(
     logic_adapters=[
         {
             'import_path': 'chatterbot.logic.BestMatch',
-            'statement_comparison_function': 'chatterbot.comparisons.levenshtein_distance'
+            'statement_comparison_function': 'chatterbot.comparisons.levenshtein_distance',
+            'response_selection_method': 'chatterbot.response_selection.get_random_response',
+            'default_response': 'I am sorry, but I do not understand.',
+            'maximum_similarity_threshold': 0.60
         },
         {
             'import_path': 'chatterbot.logic.MathematicalEvaluation'
-        },
-        {
-            'import_path': 'chatterbot.logic.BestMatch',
-            'default_response': 'I am sorry, but I do not understand.',
-            'maximum_similarity_threshold': 0.60
         }
     ],
     preprocessors=[
