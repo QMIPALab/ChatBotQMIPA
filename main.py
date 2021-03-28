@@ -24,6 +24,9 @@ bot = ChatBot(
         },
         {
             'import_path': 'chatterbot.logic.MathematicalEvaluation'
+        },
+        {
+            'import_path': 'chatterbot.logic.WikipediaResponseAdapter'
         }
     ],
     preprocessors=[
