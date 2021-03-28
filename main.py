@@ -6,7 +6,7 @@ import re
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
-DISCORD_BOT_KEY = 'token'
+DISCORD_BOT_KEY = os.environ.get('token')
 
 logging.basicConfig(level=logging.INFO)
 
