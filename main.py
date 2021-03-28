@@ -117,7 +117,7 @@ async def on_message(message):
 
             # clean string before persisting to DB
             query_string = query_string.lstrip(" ,.?;][}{%@$^&*")
-            response = get_response(query_string)
+            response = str(get_response(query_string))
 
             # Here we only reply if replying is set to true
             if replying:
