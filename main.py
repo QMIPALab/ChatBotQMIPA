@@ -73,7 +73,7 @@ botId = 0
 
 triggers = []
 triggersLower = []
-
+trainingdata = []
 
 @client.event
 async def on_ready():
@@ -150,7 +150,6 @@ async def on_message(message):
                 starttraining = True
             
             if matching_trainingtrigger:
-                trainingdata = []
                 query_string = await remove_bot_reference(query_string, ttrigger)
                 trainingdata.append(query_string)
                 return trainingdata
