@@ -21,7 +21,7 @@ bot = ChatBot(
             'import_path': 'chatterbot.logic.BestMatch',
             'statement_comparison_function': 'chatterbot.comparisons.levenshtein_distance',
             'default_response': 'I am sorry, but I do not understand.',
-            'maximum_similarity_threshold': 0.60
+            'maximum_similarity_threshold': 0.40
         },
         {
             'import_path': 'chatterbot.logic.MathematicalEvaluation'
