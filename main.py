@@ -99,13 +99,13 @@ async def on_ready():
         triggersLower = [x.lower() for x in triggers]
         
         global trainingtriggers
-        trainingtriggers ={'lets train ','yuk belajar '}
+        trainingtriggers ={'lets train','yuk belajar'}
         
         global trainingtriggersLower
         trainingtriggersLower = [x.lower() for x in trainingtriggers]
 
         global endtrainingtriggers
-        endtrainingtriggers ={'end training ','belajar selesai '}
+        endtrainingtriggers ={'end training','belajar selesai'}
         
         global endtrainingtriggersLower
         endtrainingtriggersLower = [x.lower() for x in endtrainingtriggers]
@@ -159,7 +159,7 @@ async def on_message(message):
             # Here we only reply if replying is set to true
             if starttraining:
                 starttraining = 'To train me use ! in front of your text, make it a conversation end end the training by typing end training/belajar selesai and my name'
-                embed=discord.Embed(title="QbotBeta", description = response, color = (0xF48D1))
+                embed=discord.Embed(title="QbotBeta", description = starttraining, color = (0xF48D1))
                 await message.channel.send(embed=embed)
             
             if replying:
