@@ -10,10 +10,11 @@ Chatbot QMIPA (Codenamed = Q-Bot) adalah sebuah chatbot yang menggunakan basis C
 5. Membuat agar bisa voting
 
 ## To do list:
-1. Cari tahu lebih lanjut tentang sistem database SQL nya Chatterbot
+1. Bug fix (khususnya dimana bot lebih memprioritaskan Wikipedia Searches daripada mencari di data training)
 2. Menambah database tentang asisten2 QMIPA
 
 ## Version History
 - 0.0.1 = Membuat dasar dari chatbot bernama Me-Q. Menggunakan model ChatbotAI
 - 0.0.2 = Mengganti model dari ChatbotAI menjadi Chatterbot. Menambah database baru.
-= 0.0.3 = Menambahkan fungsi dasar searching lewat Wikipedia
+- 0.0.3 = Menambahkan fungsi dasar searching lewat Wikipedia
+- 1.0.0 = Launching QBot dengan fungsi dasar wikipedia dan training

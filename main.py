@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO)
 
 # Create a new ChatBot instance
 bot = ChatBot(
-    'DiscorderBot',
+    'QMIPABot',
     storage_adapter='chatterbot.storage.SQLStorageAdapter',
     database='./db.psql',
     logic_adapters=[
@@ -98,10 +98,10 @@ async def on_ready():
                     'oi ' + botNameCleaned}
         global triggersLower
         triggersLower = [x.lower() for x in triggers]
-        
+
         global trainingtriggers
         trainingtriggers ={'lets train','yuk belajar'}
-        
+
         global trainingtriggersLower
         trainingtriggersLower = [x.lower() for x in trainingtriggers]
 
@@ -113,7 +113,7 @@ async def on_ready():
 
         global endtrainingtriggers
         endtrainingtriggers ={'end training','belajar selesai'}
-        
+
         global endtrainingtriggersLower
         endtrainingtriggersLower = [x.lower() for x in endtrainingtriggers]
 
@@ -148,7 +148,7 @@ async def on_message(message):
             if matching_trigger:
                 replying = True
                 query_string = await remove_bot_reference(query_string, matching_trigger)
-                
+
             if matching_trainingtrigger and code_to_train == 1:
                 query_string = await remove_bot_reference(query_string, matching_trainingtrigger)
                 trainingdata.append(query_string)
@@ -168,12 +168,12 @@ async def on_message(message):
             if matching_starttrainingtrigger:
                 starttraining = True
                 code_to_train = 1
-            
+
             # Here we only reply if replying is set to true
             if starttraining:
                 starttraining = 'To train me use ! or # in front of your text, make it a conversation and end the training by typing end training/belajar selesai'
                 await message.channel.send(starttraining)
-            
+
             if replying:
                 await message.channel.send(response)
 
