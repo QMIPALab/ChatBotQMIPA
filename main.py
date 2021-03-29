@@ -157,6 +157,7 @@ async def on_message(message):
                 return trainingdata
 
             if matching_endtrainingtrigger:
+                print(trainingdata)
                 trainer = ListTrainer(bot)
                 trainer.train(trainingdata)
                 trainingdata = []
