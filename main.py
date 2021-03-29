@@ -107,7 +107,7 @@ async def on_ready():
         global ttriggers
         ttriggers ={'!','#'}
 
-        global ttriggers
+        global ttriggersLower
         ttriggersLower = [x.lower() for x in ttriggers]
 
         global endtrainingtriggers
