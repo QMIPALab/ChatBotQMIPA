@@ -143,16 +143,10 @@ async def on_message(message):
                 replying = True
                 query_string = await remove_bot_reference(query_string, matching_trigger)
 
-            # clean string before persisting to DB
-            query_string = query_string.lstrip(" ,.?;][}{%@$^&*")
-            response = str(get_response(query_string))
-
-            if matching_starttrainingtrigger:
-                starttraining = True
-            
             if matching_trainingtrigger:
                 query_string = await remove_bot_reference(query_string, ttrigger)
                 trainingdata.append(query_string)
+                print('your here')
                 print(trainingdata)
                 return trainingdata
 
@@ -163,6 +157,13 @@ async def on_message(message):
                 trainingdata = []
                 trainingend = True
 
+            # clean string before persisting to DB
+            query_string = query_string.lstrip(" ,.?;][}{%@$^&*")
+            response = str(get_response(query_string))
+
+            if matching_starttrainingtrigger:
+                starttraining = True
+            
             # Here we only reply if replying is set to true
             if starttraining:
                 starttraining = 'To train me use ! in front of your text, make it a conversation end end the training by typing end training/belajar selesai and my name'
