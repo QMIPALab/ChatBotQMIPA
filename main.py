@@ -172,16 +172,16 @@ async def on_message(message):
             # Here we only reply if replying is set to true
             if starttraining:
                 starttraining = 'To train me use ! or # in front of your text, make it a conversation and end the training by typing end training/belajar selesai'
-                embed=discord.Embed(title="QbotBeta", description = starttraining, color = (0xF48D1))
+                embed=discord.Embed(title="Qbot", description = starttraining, color = (0xF48D1))
                 await message.channel.send(embed=embed)
             
             if replying:
-                embed=discord.Embed(title="QbotBeta", description = response, color = (0xF48D1))
+                embed=discord.Embed(title="Qbot", description = response, color = (0xF48D1))
                 await message.channel.send(embed=embed)
 
             if trainingend:
                 trainingendresponse = 'Thank you for training me, you can test me now'
-                embed=discord.Embed(title="QbotBeta", description = trainingendresponse, color = (0xF48D1))
+                embed=discord.Embed(title="Qbot", description = trainingendresponse, color = (0xF48D1))
                 await message.channel.send(embed=embed)
 
     except Exception as err:
