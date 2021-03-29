@@ -21,8 +21,8 @@ bot = ChatBot(
         {
             'import_path': 'chatterbot.logic.BestMatch',
             'statement_comparison_function': 'chatterbot.comparisons.levenshtein_distance',
-            'default_response': 'Ha?',
-            'maximum_similarity_threshold': 0.50
+            'default_response': 'Hah?',
+            'maximum_similarity_threshold': 0.70
         },
         {
             'import_path': 'chatterbot.logic.MathematicalEvaluation'
@@ -40,8 +40,9 @@ bot = ChatBot(
 )
 trainer = ChatterBotCorpusTrainer(bot)
 
-# Train the bot using training data in the file
+# Train the bot using training data in the file and export all training to a json file
 trainer.train("./Gabungan")
+trainer.export_for_training('./qbot_training.json')
 
 # Training the bot using responses
 def train(content):
