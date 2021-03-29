@@ -4,6 +4,7 @@ import logging
 import re
 
 from chatterbot import ChatBot
+from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 DISCORD_BOT_KEY = os.environ.get('token')
@@ -39,6 +40,12 @@ bot = ChatBot(
 trainer = ChatterBotCorpusTrainer(bot)
 
 trainer.train("./Gabungan")
+
+def train(content):
+    trainer = ListTrainer(bot)
+    trainer.train(content)
+    thanks = 'thank you for training me'
+    return thanks
 
 def get_response(content):
         return bot.get_response(content)
@@ -87,10 +94,21 @@ async def on_ready():
         global triggers
         triggers = {botName, botNameCleaned, '<@!' + str(botId) + '>', 'hey <@!' + str(botId) + '>', 'hey ' + botName,
                     'hey ' + botNameCleaned, 'hi ' + botName, 'hi ' + botNameCleaned, 'oi ' + botName,
-                    'oi ' + botNameCleaned,
-                    '!' + botName, '!' + botNameCleaned}
+                    'oi ' + botNameCleaned}
         global triggersLower
         triggersLower = [x.lower() for x in triggers]
+        
+        global trainingtrigger
+        trainingtriggers ={'train ' + botName,'belajar ' + botName,'train '+ botNameCleaned , 'belajar ' + botNameCleaned}
+        
+        global trainingtriggersLower
+        trainingtriggersLower = [x.lower() for x in trainingtriggers]
+
+        global endtrainingtrigger
+        trainingtriggers ={'end training ' + botName,'belajar selesai ' + botName,'end training '+ botNameCleaned , 'belajar selesai' + botNameCleaned}
+        
+        global endtrainingtriggersLower
+        trainingtriggersLower = [x.lower() for x in endtrainingtriggers]
 
     except Exception as e:
         print(e.args)
@@ -104,12 +122,16 @@ async def on_message(message):
         # Checking that the message is not from our bot - we don't want it replying to itself into infinity!
         if not user.bot:
             replying = False
+            training = False
 
             query_string = message.content
             query_string_to_lower = query_string.lower()
 
             # check if Bot has been summoned and set 'replying' to true
             matching_trigger = await check_for_trigger_match(query_string_to_lower, triggersLower)
+            matching_starttrainingtrigger = await check_for_trigger_match(query_string_to_lower, trainingtriggersLower)
+            matching_trainingtrigger = await check_for_trigger_match(query_string_to_lower, '!')
+            matching_endtrainingtrigger = await check_for_trigger_match(query_string_to_lower, endtrainingtriggersLower)
 
             if matching_trigger:
                 replying = True
@@ -119,10 +141,34 @@ async def on_message(message):
             query_string = query_string.lstrip(" ,.?;][}{%@$^&*")
             response = str(get_response(query_string))
 
+            if matching_starttrainingtrigger
+                starttraining = True
+            
+            if matching_trainingtrigger:
+                trainingdata = []
+                trainingdata.append(query_string)
+                return trainingdata
+
+            if matching_endtrainingtrigger:
+                train(query_string)
+                trainingdata = []
+                trainingend = True
+
             # Here we only reply if replying is set to true
+            if starttraining:
+                starttraining = 'To train me use ! in front of your text, make it a conversation end end the training by typing end training/belajar selesai and my name'
+                embed=discord.Embed(title="QbotBeta", description = response, color = (0xF48D1))
+                await message.channel.send(embed=embed)
+            
             if replying:
                 embed=discord.Embed(title="QbotBeta", description = response, color = (0xF48D1))
                 await message.channel.send(embed=embed)
+
+            if trainingend:
+                trainingendresponse = 'Thank you for training me'
+                embed=discord.Embed(title="QbotBeta", description = trainingendresponse, color = (0xF48D1))
+                await message.channel.send(embed=embed)
+                return trainingdata
 
     except Exception as err:
         print(err.args)
