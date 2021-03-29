@@ -146,6 +146,8 @@ async def on_message(message):
             if matching_trigger:
                 replying = True
                 query_string = await remove_bot_reference(query_string, matching_trigger)
+                trainingdata = []
+                return trainingdata
 
             if matching_trainingtrigger:
                 query_string = await remove_bot_reference(query_string, matching_trainingtrigger)
