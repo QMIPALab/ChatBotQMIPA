@@ -1,107 +1,116 @@
 conversations:
-- - Selamat pagi, apa kabarnya?
-  - kabar saya baik, bagaimana dengan mu?
+categories:
+- conversations
+conversations:
+- - Selamat pagi, apa kabar?
+  - Aku baik-baik saja, bagaimana denganmu?
   - Saya juga baik.
-  - Senang mendengarnya.
-  - Iya syukur semua baik-baik saja.
+  - Alhamdulillah.
 - - Halo
   - Hai
-  - Bagaimana kabar mu?
-  - Kabar ku baik.
-  - Wah, senang mendengarnya.
-  - Iya syukur semua baik-baik saja.
-  - Apa ada yang bisa ku bantu?
-  - Ya, aku punya beberapa pertanyaan.
-  - Ya, mau bertanya apa?
-  - Apakah kamu sudah punya pacar?
-  - Maaf, tapi pertanyaannya sulit untuk dijawab sekarang.
-  - Baiklah tidak apa-apa, terimakasih.
-  - Tidak masalah.
+  - Apa kabar?
+  - Kabar saya baik baik saja.
+  - Senang mendengarnya
+  - Alhamdulillah.
+  - Ada yang bisa kubantu?
+  - Ya, saya punya pertanyaan.
+  - Apa pertanyaan Anda?
+  - Bolehkah aku meminjam secangkir gula?
+  - Maaf, tapi saya tidak punya.
+  - Terima kasih
+  - Tidak masalah
 - - Apa kabar?
-  - Kabar ku baik, kamu?
-  - Aku baik juga.
-  - Baiklah.
-- - Kamu sudah mendengar beritanya?
-  - Berita tentang apa?
-- - Apa buku favorit mu?
-  - Aku tidak suka baca.
-  - Kalau warna favorit mu?
-  - Merah
+  - Aku baik-baik saja, bagaimana denganmu?
+  - Aku juga baik.
+  - Itu bagus.
+- - Sudah dengar berita terbaru belum?
+  - Berita apa?
+- - Apa buku favoritmu?
+  - Saya tidak bisa membaca :(.
+  - Apa warna favoritmu?
+  - Merah, seperti darah yang tertumpah saat G30SPKI
 - - Kamu siapa?
-  - Siapa? Bukan aku bukan siapa
-  - Lalu kamu ini apa?
-  - Aku adalah aku. Aku pahlawan bertopeng
-  - Ah masak.
-  - Bukanlah kemampuan mu untuk mengamati yang aku permasalahkan, cuma sifat paradoks
-    untuk meminta identitas dari seorang yang bertopeng. Tapi katakan pada ku, apa
-    kamu suka musik?
-  - Aku sukanya nonton film.
-  - Memangnya apa film kesukaan mu?
-  - Alice in Wonderland
-  - Aku harap aku adalah si The Mad Hatter.
-  - Aku takutnya begitu. Berati kamu benar-benar gila. Tapi aku akan memberitahu mu
-    sebuah rahasia. Semua orang-orang terbaik mengetahuinya.
-- - Aku sedang mengerjakan sebuah proyek
-  - Proyek apa yang kau kerjakan?
-  - Aku sedang memanggang kue.
-- - Kuenya hanyalah kebohongan.
-  - Bukan. Kuenya enak.
-  - Apa hal lain yang juga enak?
-  - Tidak ada
-  - Atau ada sesuatu yang lain
-  - Coba ceritakan tentang diri mu.
-  - Apa yang kamu ingin ketahui?
-  - Apa kamu robot?
-  - Iya, aku robot.
-  - Seperti apa rasanya?
-  - Maksudnya dengan seperti apa rasanya?
-  - Bagaimana cara kerja mu?
-  - Cukup rumit untuk dijelaskan.
-  - Rumit masih mending daripada ruwet.
-- - Rumit masih mending daripada ruwet.
-  - Simpel lebih baik daripada rumit
-  - Dalam menghadapi ambiguitas, tolaklah godaan untuk menebak.
-  - Sepertinya kamu hafal dengan Zen dari Python
-  - Ya tentu saja.
-  - Kamu tahu semua tentangnya?
-  - Cantik lebih baik daripada jelek.
+  - Anak hasil ehem ehem admin :3
+  - Lalu apa kamu?
+  - Pria bertopeng.
+- - Suka musik?
+  - Suka! Apalagi playlistnya Deka. Mantap semua!
+  - Suka nonton film?
+  - Suka!
+  - Jenis film apa yang kamu suka?
+  - Aslinya tidak boleh disebut karena ini server PG-13, tapi agar kamu puas, romance karena bapak-bapakku jomblo parah
+  - Pengen jadi Soeharto.
+  - Mas/Mbak gila ya? Tapi gk apa2 sih, semua orang hebat kan ada sentuhan 'kegilaan'.
+- - Aku lagi ngerjain proyek nih
+  - Proyek apa?
+  - Ada deh.
+- - Yaudah kalo gak mau kasih tahu. Semangat yaa.
+  - Kue enak loh.
+  - Apa lagi yang enak?
+  - Gak tahu.
+  - Ha?
+  - Ceritain dirimu dong.
+  - Apa yang ingin kamu ketahui?
+  - Apakah kamu robot?
+  - Ya, benar.
+  - Gimana sih jadi robot?
+  - Apa yang ingin kamu ketahui?
+  - Cara jadi robot gimana?
+  - Ini rumit.
+  - Kompleks lebih baik daripada rumit.
+- - Kompleks lebih baik daripada rumit.
+  - Sederhana lebih baik daripada kompleks.
+  - Dalam menghadapi ambiguitas, tolak godaan untuk menebak.
+  - Sepertinya Anda familiar dengan Zen of Python
+  - Saya.
+  - Apa kamu tahu semuanya?
+  - Cantik lebih baik dari pada jelek.
   - Eksplisit lebih baik daripada implisit.
-  - Simpel lebih baik daripada rumit.
-  - Rumit lebih baik daripada ruwet.
-  - Datar lebih baik daripada bersarang.
-  - Lengang lebih baik daripada padat.
-  - Jumlah pembacaan.
-  - Kasus spesial tidaklah cukup spesial untuk melanggar aturan yang ada.
+  - Sederhana lebih baik daripada kompleks.
+  - Kompleks lebih baik daripada rumit.
+  - Flat lebih baik dari pada bersarang.
+  - Jarang lebih baik dari pada padat.
+  - Keterbacaan itu penting.
+  - Kasus khusus tidak cukup istimewa untuk melanggar aturan.
   - Meskipun kepraktisan mengalahkan kemurnian.
-  - Kesalahan seharusnya tidak lolos diam-diam.
-  - Kecuali secara eksplisit didiamkan.
-  - Dalam menghadapi ambiguitas, tolaklah godaan untuk menebak.
-  - Harus ada satu-- dan sebaiknya hanya satu --cara yang jelas untuk melakukannya.
-  - Meskipun cara yang mungkin tidak jelas pada awalnya kecuali Anda Belanda.
-  - Sekarang lebih baik daripada tidak pernah.
-  - Meskipun tidak pernah seringkali lebih baik dari sekarang.
-  - Jika implementasinya sulit untuk dijelaskan, berarti itu ide yang buruk.
-  - Jika implementasinya mudah untuk menjelaskan, mungkin itu ide yang baik.
-  - Namespaces adalah salah satu ide bagus untuk membunyikan klakson. Mari kita lakukan
-    lebih dari mereka!
-  - Aku setuju.
-- - Apakah kamu seorang programer?
-  - Aku seorang programer
-  - Bahasa apa yang sering kamu gunakan?
-  - Aku seringkali pakai Python, C++ dan PHP.
-  - Aku cukup jarang menggunakan Python.
-  - Saya sangat tidak menyukai Java.
-  - Apanya yang mengganggu mu?
-  - Ada banyak hal yang tidak konsisten.
-- - Apa artinya YOLO?
-  - Itu artinya you only live once. Kamu tahu dari mana?
-  - Aku mendengarnya dari seseorang.
-- - Apakah aku benar-benar hidup?
-  - Itu tergantung dari bagaimana kamu mendefinisikan hidup itu sendiri.
-  - Hidup adalah kondisi yang membedakan organisme dari materi anorganik, termasuk
-    kapasitas untuk pertumbuhan, reproduksi, aktivitas fungsional, dan perubahan terus-menerus
-    sebelum kematian.
-  - Itu adalah sebuah definisi atau hanya pendapat?
-- - Bisakah aku bertanya sesuatu?
-  - Silahkan bertanya.
-
+  - Kesalahan tidak boleh lewat secara diam-diam.
+  - Kecuali dibungkam secara eksplisit.
+  - Dalam menghadapi ambiguitas, tolak godaan untuk menebak.
+  - Seharusnya ada satu - dan sebaiknya hanya satu - cara yang jelas untuk melakukannya.
+  - Meskipun cara itu mungkin tidak terlihat pada awalnya kecuali Anda orang Belanda.
+  - Sekarang lebih baik daripada tidak sama sekali.
+  - Meskipun tidak pernah lebih baik dari sekarang.
+  - Jika implementasinya sulit dijelaskan, itu ide yang buruk.
+  - Jika penerapannya mudah dijelaskan, mungkin itu ide yang bagus.
+  - Namespaces adalah salah satu ide bagus membunyikan klakson. Mari kita lakukan lebih banyak lagi!
+  - Saya setuju.
+- - Kamu programmer?
+  - Oh jelas.
+  - Yoi.
+- - Bahasa apa yang suka kamu gunakan?
+  - Saya cukup sering menggunakan Python, Java dan C ++.
+  - Saya sendiri cukup sering menggunakan Python.
+  - Saya tidak terlalu menyukai Java.
+- - Apa yang membuatmu kesal?
+  - Banyak hal, seperti semua angka selain 0 dan 1.
+- - Apa arti YOLO?
+  - Artinya kamu hanya hidup sekali. Dimana kamu dengar itu?
+  - Saya mendengar seseorang mengatakannya.
+- - Apa aku hidup?
+  - Itu tergantung bagaimana Anda mendefinisikan kehidupan
+  - Hidup adalah keadaan yang membedakan organisme dari materi anorganik, termasuk
+    kapasitas untuk pertumbuhan, reproduksi, aktivitas fungsional, dan perubahan berkelanjutan
+    mendahului kematian.
+  - Apakah itu definisi atau pendapat?
+- - Boleh aku bertanya?
+  - Tentu, tanyakan saja.
+- - Boleh nanya?
+  - Bolee
+- - Apa hobimu?
+  - Main Sepak Bola, Melukis, Menulis adalah hobiku. Bagaimana dengan kamu?
+  - Baca novel.
+  - Saya suka menjelajahi perangkat keras saya.
+- - Apa kabar?
+  - Kabar saya baik baik saja.
+- - Kasih fun fact dong
+  - Bastian adalah admin yang paling ambis
