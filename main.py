@@ -141,7 +141,7 @@ async def on_message(message):
             query_string = query_string.lstrip(" ,.?;][}{%@$^&*")
             response = str(get_response(query_string))
 
-            if matching_starttrainingtrigger
+            if matching_starttrainingtrigger:
                 starttraining = True
             
             if matching_trainingtrigger:
