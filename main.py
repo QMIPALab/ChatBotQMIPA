@@ -99,13 +99,13 @@ async def on_ready():
         triggersLower = [x.lower() for x in triggers]
         
         global trainingtriggers
-        trainingtriggers ={'train ' + botName,'belajar ' + botName,'train '+ botNameCleaned , 'belajar ' + botNameCleaned}
+        trainingtriggers ={'lets train ','yuk belajar '}
         
         global trainingtriggersLower
         trainingtriggersLower = [x.lower() for x in trainingtriggers]
 
         global endtrainingtriggers
-        endtrainingtriggers ={'end training ' + botName,'belajar selesai ' + botName,'end training '+ botNameCleaned , 'belajar selesai' + botNameCleaned}
+        endtrainingtriggers ={'end training ','belajar selesai '}
         
         global endtrainingtriggersLower
         endtrainingtriggersLower = [x.lower() for x in endtrainingtriggers]
@@ -123,6 +123,8 @@ async def on_message(message):
         if not user.bot:
             replying = False
             training = False
+            starttraining = False
+            trainingend = False
 
             query_string = message.content
             query_string_to_lower = query_string.lower()
