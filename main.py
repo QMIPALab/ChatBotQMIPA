@@ -74,6 +74,7 @@ botId = 0
 triggers = []
 triggersLower = []
 trainingdata = []
+code_to_train = 0
 
 @client.event
 async def on_ready():
@@ -130,10 +131,10 @@ async def on_message(message):
         # Checking that the message is not from our bot - we don't want it replying to itself into infinity!
         if not user.bot:
             replying = False
-            training = False
             starttraining = False
             trainingend = False
             global trainingdata
+            global code_to_train
 
             query_string = message.content
             query_string_to_lower = query_string.lower()
@@ -147,16 +148,10 @@ async def on_message(message):
             if matching_trigger:
                 replying = True
                 query_string = await remove_bot_reference(query_string, matching_trigger)
-                trainingdata = []
-                return trainingdata
-
-            if matching_trainingtrigger:
+                
+            if matching_trainingtrigger and code_to_train == 1:
                 query_string = await remove_bot_reference(query_string, matching_trainingtrigger)
-                print(type(query_string))
-                print(type(trainingdata))
                 trainingdata.append(query_string)
-                print('your here')
-                print(trainingdata)
 
             if matching_endtrainingtrigger:
                 print(trainingdata)
@@ -164,6 +159,7 @@ async def on_message(message):
                 trainer.train(trainingdata)
                 trainingdata = []
                 trainingend = True
+                code_to_train = 0
 
             # clean string before persisting to DB
             query_string = query_string.lstrip(" ,.?;][}{%@$^&*")
@@ -171,10 +167,11 @@ async def on_message(message):
 
             if matching_starttrainingtrigger:
                 starttraining = True
+                code_to_train = 1
             
             # Here we only reply if replying is set to true
             if starttraining:
-                starttraining = 'To train me use ! in front of your text, make it a conversation end end the training by typing end training/belajar selesai and my name'
+                starttraining = 'To train me use ! or # in front of your text, make it a conversation and end the training by typing end training/belajar selesai and my name'
                 embed=discord.Embed(title="QbotBeta", description = starttraining, color = (0xF48D1))
                 await message.channel.send(embed=embed)
             
