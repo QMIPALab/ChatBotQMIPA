@@ -104,6 +104,9 @@ async def on_ready():
         global trainingtriggersLower
         trainingtriggersLower = [x.lower() for x in trainingtriggers]
 
+        global ttrigger
+        ttrigger = ['!']
+
         global endtrainingtriggers
         endtrainingtriggers ={'end training','belajar selesai'}
         
@@ -132,7 +135,7 @@ async def on_message(message):
             # check if Bot has been summoned and set 'replying' to true
             matching_trigger = await check_for_trigger_match(query_string_to_lower, triggersLower)
             matching_starttrainingtrigger = await check_for_trigger_match(query_string_to_lower, trainingtriggersLower)
-            matching_trainingtrigger = await check_for_trigger_match(query_string_to_lower, '!')
+            matching_trainingtrigger = await check_for_trigger_match(query_string_to_lower, ttrigger)
             matching_endtrainingtrigger = await check_for_trigger_match(query_string_to_lower, endtrainingtriggersLower)
 
             if matching_trigger:
@@ -148,6 +151,7 @@ async def on_message(message):
             
             if matching_trainingtrigger:
                 trainingdata = []
+                query_string = await remove_bot_reference(query_string, ttrigger)
                 trainingdata.append(query_string)
                 return trainingdata
 
