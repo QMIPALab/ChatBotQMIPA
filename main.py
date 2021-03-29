@@ -104,8 +104,11 @@ async def on_ready():
         global trainingtriggersLower
         trainingtriggersLower = [x.lower() for x in trainingtriggers]
 
-        global ttrigger
-        ttrigger = ['!']
+        global ttriggers
+        ttriggers ={'!','#'}
+
+        global ttriggers
+        ttriggersLower = [x.lower() for x in ttriggers]
 
         global endtrainingtriggers
         endtrainingtriggers ={'end training','belajar selesai'}
@@ -113,13 +116,14 @@ async def on_ready():
         global endtrainingtriggersLower
         endtrainingtriggersLower = [x.lower() for x in endtrainingtriggers]
 
+        global trainingdata
+
     except Exception as e:
         print(e.args)
 
 
 @client.event
 async def on_message(message):
-    global trainingdata
     try:
         user = message.author
 
@@ -136,7 +140,7 @@ async def on_message(message):
             # check if Bot has been summoned and set 'replying' to true
             matching_trigger = await check_for_trigger_match(query_string_to_lower, triggersLower)
             matching_starttrainingtrigger = await check_for_trigger_match(query_string_to_lower, trainingtriggersLower)
-            matching_trainingtrigger = await check_for_trigger_match(query_string_to_lower, ttrigger)
+            matching_trainingtrigger = await check_for_trigger_match(query_string_to_lower, ttriggersLower)
             matching_endtrainingtrigger = await check_for_trigger_match(query_string_to_lower, endtrainingtriggersLower)
 
             if matching_trigger:
@@ -145,7 +149,6 @@ async def on_message(message):
 
             if matching_trainingtrigger:
                 query_string = await remove_bot_reference(query_string, ttrigger)
-                print('its here')
                 trainingdata.append(query_string)
                 print('your here')
                 print(trainingdata)
