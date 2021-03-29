@@ -133,6 +133,7 @@ async def on_message(message):
             training = False
             starttraining = False
             trainingend = False
+            global trainingdata
 
             query_string = message.content
             query_string_to_lower = query_string.lower()
