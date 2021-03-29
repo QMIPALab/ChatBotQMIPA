@@ -98,17 +98,17 @@ async def on_ready():
         global triggersLower
         triggersLower = [x.lower() for x in triggers]
         
-        global trainingtrigger
+        global trainingtriggers
         trainingtriggers ={'train ' + botName,'belajar ' + botName,'train '+ botNameCleaned , 'belajar ' + botNameCleaned}
         
         global trainingtriggersLower
         trainingtriggersLower = [x.lower() for x in trainingtriggers]
 
-        global endtrainingtrigger
-        trainingtriggers ={'end training ' + botName,'belajar selesai ' + botName,'end training '+ botNameCleaned , 'belajar selesai' + botNameCleaned}
+        global endtrainingtriggers
+        endtrainingtriggers ={'end training ' + botName,'belajar selesai ' + botName,'end training '+ botNameCleaned , 'belajar selesai' + botNameCleaned}
         
         global endtrainingtriggersLower
-        trainingtriggersLower = [x.lower() for x in endtrainingtriggers]
+        endtrainingtriggersLower = [x.lower() for x in endtrainingtriggers]
 
     except Exception as e:
         print(e.args)
