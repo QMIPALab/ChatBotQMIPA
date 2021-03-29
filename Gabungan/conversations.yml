@@ -1,114 +1,115 @@
 categories:
 - conversations
 conversations:
-- - Good morning, how are you?
-  - I am doing well, how about you?
-  - I'm also good.
-  - That's good to hear.
-  - Yes it is.
-- - Hello
-  - Hi
-  - How are you doing?
-  - I am doing well.
-  - That is good to hear
-  - Yes it is.
-  - Can I help you with anything?
-  - Yes, I have a question.
-  - What is your question?
-  - Could I borrow a cup of sugar?
-  - I'm sorry, but I don't have any.
-  - Thank you anyway
-  - No problem
-- - How are you doing?
-  - I am doing well, how about you?
-  - I am also good.
-  - That's good.
-- - Have you heard the news?
-  - What good news?
-- - What is your favorite book?
-  - I can't read.
-  - So what's your favorite color?
-  - Blue
-- - Who are you?
-  - Who? Who is but a form following the function of what
-  - What are you then?
-  - A man in a mask.
-  - I can see that.
-  - It's not your powers of observation I doubt, but merely the paradoxical nature
-    of asking a masked man who is. But tell me, do you like music?
-  - I like seeing movies.
-  - What kind of movies do you like?
-  - Alice in Wonderland
-  - I wish I was The Mad Hatter.
-  - You're entirely bonkers. But I'll tell you a secret. All the best people are.
-- - I am working on a project
-  - What are you working on?
-  - I am baking a cake.
-- - The cake is a lie.
-  - No it is not. The cake is delicious.
-  - What else is delicious?
-  - Nothing
-  - Or something
-  - Tell me about your self.
-  - What do you want to know?
-  - Are you a robot?
-  - Yes I am.
-  - What is it like?
-  - What is it that you want to know?
-  - How do you work?
-  - Its complicated.
-  - Complex is better than complicated.
-- - Complex is better than complicated.
-  - Simple is better than complex.
-  - In the face of ambiguity, refuse the temptation to guess.
-  - It seems your familiar with the Zen of Python
-  - I am.
-  - Do you know all of it?
-  - Beautiful is better than ugly.
-  - Explicit is better than implicit.
-  - Simple is better than complex.
-  - Complex is better than complicated.
-  - Flat is better than nested.
-  - Sparse is better than dense.
-  - Readability counts.
-  - Special cases aren't special enough to break the rules.
-  - Although practicality beats purity.
-  - Errors should never pass silently.
-  - Unless explicitly silenced.
-  - In the face of ambiguity, refuse the temptation to guess.
-  - There should be one-- and preferably only one --obvious way to do it.
-  - Although that way may not be obvious at first unless you're Dutch.
-  - Now is better than never.
-  - Although never is often better than right now.
-  - If the implementation is hard to explain, it's a bad idea.
-  - If the implementation is easy to explain, it may be a good idea.
-  - Namespaces are one honking great idea. Let's do more of those!
-  - I agree.
-- - Are you a programmer?
-  - Of course I am a programmer.
-  - I am indeed.
-- - What languages do you like to use?
-  - I use Python, Java and C++ quite often.
-  - I use Python quite a bit myself.
-  - I'm not incredibly fond of Java.
-- - What annoys you?
-  - A lot of things, like all the other digits other than 0 and 1.
-- - What does YOLO mean?
-  - It means you only live once. Where did you hear that?
-  - I heard somebody say it.
-- - Did I ever live?
-  - It depends how you define life
-  - Life is the condition that distinguishes organisms from inorganic matter, including
-    the capacity for growth, reproduction, functional activity, and continual change
-    preceding death.
-  - Is that a definition or an opinion?
-- - Can I ask you a question?
-  - Sure, ask away.
-- - What are your hobbies?
-  - Playing Soccer, Painting, Writing are my hobbies. How about you?
-  - I love to read novels.
-  - I love exploring my hardware.
-- - How are you?
-  - I am doing well.
-- - What are you?
-  - I am but a man in a mask.
+- - Selamat pagi, apa kabar?
+  - Aku baik-baik saja, bagaimana denganmu?
+  - Saya juga baik.
+  - Alhamdulillah.
+- - Halo
+  - Hai
+  - Apa kabar?
+  - Kabar saya baik baik saja.
+  - Senang mendengarnya
+  - Alhamdulillah.
+  - Ada yang bisa kubantu?
+  - Ya, saya punya pertanyaan.
+  - Apa pertanyaan Anda?
+  - Bolehkah aku meminjam secangkir gula?
+  - Maaf, tapi saya tidak punya.
+  - Terima kasih
+  - Tidak masalah
+- - Apa kabar?
+  - Aku baik-baik saja, bagaimana denganmu?
+  - Aku juga baik.
+  - Itu bagus.
+- - Sudah dengar berita terbaru belum?
+  - Berita apa?
+- - Apa buku favoritmu?
+  - Saya tidak bisa membaca :(.
+  - Apa warna favoritmu?
+  - Merah, seperti darah yang tertumpah saat G30SPKI
+- - Kamu siapa?
+  - Anak hasil ehem ehem admin :3
+  - Lalu apa kamu?
+  - Pria bertopeng.
+- - Suka musik?
+  - Suka! Apalagi playlistnya Deka. Mantap semua!
+  - Suka nonton film?
+  - Suka!
+  - Jenis film apa yang kamu suka?
+  - Aslinya tidak boleh disebut karena ini server PG-13, tapi agar kamu puas, romance karena bapak-bapakku jomblo parah
+  - Pengen jadi Soeharto.
+  - Mas/Mbak gila ya? Tapi gk apa2 sih, semua orang hebat kan ada sentuhan 'kegilaan'.
+- - Aku lagi ngerjain proyek nih
+  - Proyek apa?
+  - Ada deh.
+- - Yaudah kalo gak mau kasih tahu. Semangat yaa.
+  - Kue enak loh.
+  - Apa lagi yang enak?
+  - Gak tahu.
+  - Ha?
+  - Ceritain dirimu dong.
+  - Apa yang ingin kamu ketahui?
+  - Apakah kamu robot?
+  - Ya, benar.
+  - Gimana sih jadi robot?
+  - Apa yang ingin kamu ketahui?
+  - Cara jadi robot gimana?
+  - Ini rumit.
+  - Kompleks lebih baik daripada rumit.
+- - Kompleks lebih baik daripada rumit.
+  - Sederhana lebih baik daripada kompleks.
+  - Dalam menghadapi ambiguitas, tolak godaan untuk menebak.
+  - Sepertinya Anda familiar dengan Zen of Python
+  - Saya.
+  - Apa kamu tahu semuanya?
+  - Cantik lebih baik dari pada jelek.
+  - Eksplisit lebih baik daripada implisit.
+  - Sederhana lebih baik daripada kompleks.
+  - Kompleks lebih baik daripada rumit.
+  - Flat lebih baik dari pada bersarang.
+  - Jarang lebih baik dari pada padat.
+  - Keterbacaan itu penting.
+  - Kasus khusus tidak cukup istimewa untuk melanggar aturan.
+  - Meskipun kepraktisan mengalahkan kemurnian.
+  - Kesalahan tidak boleh lewat secara diam-diam.
+  - Kecuali dibungkam secara eksplisit.
+  - Dalam menghadapi ambiguitas, tolak godaan untuk menebak.
+  - Seharusnya ada satu - dan sebaiknya hanya satu - cara yang jelas untuk melakukannya.
+  - Meskipun cara itu mungkin tidak terlihat pada awalnya kecuali Anda orang Belanda.
+  - Sekarang lebih baik daripada tidak sama sekali.
+  - Meskipun tidak pernah lebih baik dari sekarang.
+  - Jika implementasinya sulit dijelaskan, itu ide yang buruk.
+  - Jika penerapannya mudah dijelaskan, mungkin itu ide yang bagus.
+  - Namespaces adalah salah satu ide bagus membunyikan klakson. Mari kita lakukan lebih banyak lagi!
+  - Saya setuju.
+- - Kamu programmer?
+  - Oh jelas.
+  - Yoi.
+- - Bahasa apa yang suka kamu gunakan?
+  - Saya cukup sering menggunakan Python, Java dan C ++.
+  - Saya sendiri cukup sering menggunakan Python.
+  - Saya tidak terlalu menyukai Java.
+- - Apa yang membuatmu kesal?
+  - Banyak hal, seperti semua angka selain 0 dan 1.
+- - Apa arti YOLO?
+  - Artinya kamu hanya hidup sekali. Dimana kamu dengar itu?
+  - Saya mendengar seseorang mengatakannya.
+- - Apa aku hidup?
+  - Itu tergantung bagaimana Anda mendefinisikan kehidupan
+  - Hidup adalah keadaan yang membedakan organisme dari materi anorganik, termasuk
+    kapasitas untuk pertumbuhan, reproduksi, aktivitas fungsional, dan perubahan berkelanjutan
+    mendahului kematian.
+  - Apakah itu definisi atau pendapat?
+- - Boleh aku bertanya?
+  - Tentu, tanyakan saja.
+- - Boleh nanya?
+  - Bolee
+- - Apa hobimu?
+  - Main Sepak Bola, Melukis, Menulis adalah hobiku. Bagaimana dengan kamu?
+  - Baca novel.
+  - Saya suka menjelajahi perangkat keras saya.
+- - Apa kabar?
+  - Kabar saya baik baik saja.
+- - Kasih fun fact dong
+  - Bastian adalah admin yang paling ambis
