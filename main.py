@@ -8,6 +8,7 @@ from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 DISCORD_BOT_KEY = os.environ.get('token')
+# Import the token from Heroku
 
 logging.basicConfig(level=logging.INFO)
 
@@ -20,8 +21,8 @@ bot = ChatBot(
         {
             'import_path': 'chatterbot.logic.BestMatch',
             'statement_comparison_function': 'chatterbot.comparisons.levenshtein_distance',
-            'default_response': 'I am sorry, but I do not understand.',
-            'maximum_similarity_threshold': 0.20
+            'default_response': 'Ha?',
+            'maximum_similarity_threshold': 0.50
         },
         {
             'import_path': 'chatterbot.logic.MathematicalEvaluation'
@@ -39,12 +40,14 @@ bot = ChatBot(
 )
 trainer = ChatterBotCorpusTrainer(bot)
 
+# Train the bot using training data in the file
 trainer.train("./Gabungan")
 
+# Training the bot using responses
 def train(content):
     trainer = ListTrainer(bot)
     trainer.train(content)
-    thanks = 'thank you for training me'
+    thanks = 'Thank you for training me'
     return thanks
 
 def get_response(content):
