@@ -145,6 +145,7 @@ async def on_message(message):
 
             if matching_trainingtrigger:
                 query_string = await remove_bot_reference(query_string, ttrigger)
+                print('its here')
                 trainingdata.append(query_string)
                 print('your here')
                 print(trainingdata)
