@@ -152,10 +152,12 @@ async def on_message(message):
             if matching_trainingtrigger:
                 query_string = await remove_bot_reference(query_string, ttrigger)
                 trainingdata.append(query_string)
+                print(trainingdata)
                 return trainingdata
 
             if matching_endtrainingtrigger:
-                train(query_string)
+                trainer = ListTrainer(bot)
+                trainer.train(trainingdata)
                 trainingdata = []
                 trainingend = True
 
