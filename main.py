@@ -157,7 +157,6 @@ async def on_message(message):
                 trainingdata.append(query_string)
                 print('your here')
                 print(trainingdata)
-                return trainingdata
 
             if matching_endtrainingtrigger:
                 print(trainingdata)
@@ -187,7 +186,6 @@ async def on_message(message):
                 trainingendresponse = 'Thank you for training me'
                 embed=discord.Embed(title="QbotBeta", description = trainingendresponse, color = (0xF48D1))
                 await message.channel.send(embed=embed)
-                return trainingdata
 
     except Exception as err:
         print(err.args)
