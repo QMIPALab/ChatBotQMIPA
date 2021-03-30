@@ -6,6 +6,7 @@ import re
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
+from chatterbot.response_selection import get_random_response
 
 DISCORD_BOT_KEY = os.environ.get('token')
 # Import the token from Heroku
@@ -23,7 +24,7 @@ bot = ChatBot(
             'statement_comparison_function': 'chatterbot.comparisons.levenshtein_distance',
             'default_response': 'Hah?',
             'maximum_similarity_threshold': 0.70,
-            'response_selection_method': 'chatterbot.response_selection.get_random_response'
+            'response_selection_method': get_random_response
         },
         {
             'import_path': 'chatterbot.logic.MathematicalEvaluation'
