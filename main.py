@@ -20,9 +20,10 @@ bot = ChatBot(
     logic_adapters=[
         {
             'import_path': 'chatterbot.logic.BestMatch',
-            'statement_comparison_function': 'chatterbot.comparisons.levenshtein_distance',
+            'statement_comparison_function': chatterbot.comparisons.levenshtein_distance,
             'default_response': 'Hah?',
-            'maximum_similarity_threshold': 0.70
+            'maximum_similarity_threshold': 0.70,
+            'response_selection_method':chatterbot.response_selection.get_random_response
         },
         {
             'import_path': 'chatterbot.logic.MathematicalEvaluation'
